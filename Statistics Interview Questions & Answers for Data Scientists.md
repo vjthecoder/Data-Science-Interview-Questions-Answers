@@ -16,15 +16,19 @@
 * [Q13: Discuss the Chi-square, ANOVA, and t-test](https://github.com/youssefHosni/Data-Science-Interview-Questions-Answers/blob/main/Statistics%20Interview%20Questions%20%26%20Answers%20for%20Data%20Scientists.md#q13-discuss-the-chi-square-anova-and-t-test)
 * [Q14: Say you have two subsets of a dataset for which you know their means and standard deviations. How do you calculate the blended mean and standard deviation of the total dataset? Can you extend it to K subsets?](https://github.com/youssefHosni/Data-Science-Interview-Questions-Answers/blob/main/Statistics%20Interview%20Questions%20%26%20Answers%20for%20Data%20Scientists.md#q14-say-you-have-two-subsets-of-a-dataset-for-which-you-know-their-means-and-standard-deviations-how-do-you-calculate-the-blended-mean-and-standard-deviation-of-the-total-dataset-can-you-extend-it-to-k-subsets)
 * [Q15: What is the relationship between the significance level and the confidence level in Statistics?](https://github.com/youssefHosni/Data-Science-Interview-Questions-Answers/blob/main/Statistics%20Interview%20Questions%20%26%20Answers%20for%20Data%20Scientists.md#q15-what-is-the-relationship-between-the-significance-level-and-the-confidence-level-in-statistics)
-
+* [Q16: What is the Law of Large Numbers in statistics and how it can be used in data science ?](https://github.com/youssefHosni/Data-Science-Interview-Questions-Answers/blob/main/Statistics%20Interview%20Questions%20%26%20Answers%20for%20Data%20Scientists.md#:~:text=written%20in%20percentages.-,Q16%3A%20What%20is%20the%20Law%20of%20Large%20Numbers%20in%20statistics%20and%20how%20it%20can%20be%20used%20in%20data%20science%20%3F,-Answer%3A%20The%20law)
+* [Q17: What is the difference between a confidence interval and a prediction interval, and how do you calculate them?](https://github.com/youssefHosni/Data-Science-Interview-Questions-Answers/blob/main/Statistics%20Interview%20Questions%20&%20Answers%20for%20Data%20Scientists.md#:~:text=and%20hypothesis%20testing.-,Q17%3A%20What%20is%20the%20difference%20between%20a%20confidence%20interval%20and%20a%20prediction%20interval%2C%20and%20how%20do%20you%20calculate%20them%3F,-Answer%3A)
+* [Q18: What are the differences between the z-test and t-test?]()
+* [Q19: When to use a z-test Vs a t-test?]()
+* [Q20: Given a specific dataset, how do you calculate t-statistic or z-statistics?]()
 
 ## Questions & Answers ##
 
-### Q1: Explain the central limit theorem and give examples of when you can use it in a real-world problem? ###
+### Q1: Explain the central limit theorem and give examples of when you can use it in a real-world problem. ###
 
 Answers:
 
-The center limit theorem states that if any random variable, regardless of the distribution, is sampled a large enough times, the sample mean will be approximately normally distributed. This allows for studying the properties of any statistical distribution as long as there is a large enough sample size.
+The center limit theorem states that if any random variable, regardless of the distribution, is sampled a large enough time, the sample mean will be approximately normally distributed. This allows for studying the properties of any statistical distribution as long as there is a large enough sample size.
 
 Important remark from Adrian Olszewski:
 ⚠️ we can rely on the CLT with means (because it applies to any unbiased statistic) only if expressing data in this way makes sense. And it makes sense *ONLY* in the case of unimodal and symmetric data, coming from additive processes. So forget skewed, multi-modal data with mixtures of distributions, coming from multiplicative processes, and non-trivial mean-variance relationships. That are the places where arithmetic means is meaningless. Thus, using the CLT of e.g. bootstrap will give some valid answers to an invalid question.
@@ -239,4 +243,37 @@ It's closely related to hypothesis testing and confidence intervals.
 ⏺ Significance Level according to the hypothesis testing literature means the probability of Type-I error one is willing to tolerate.
 
 ⏺ Confidence Level according to the confidence interval literature means the probability in terms of the true parameter value lying inside the confidence interval. They are usually written in percentages.
+
+### Q16: What is the Law of Large Numbers in statistics and how it can be used in data science ? ###
+
+Answer:
+The law of large numbers states that as the number of trials in a random experiment increases, the average of the results obtained from the experiment approaches the expected value. In statistics, it's used to describe the relationship between sample size and the accuracy of statistical estimates.
+
+In data science, the law of large numbers is used to understand the behavior of random variables over many trials. It's often applied in areas such as predictive modeling, risk assessment, and quality control to ensure that data-driven decisions are based on a robust and accurate representation of the underlying patterns in the data.
+
+The law of large numbers helps to guarantee that the average of the results from a large number of independent and identically distributed trials will converge to the expected value, providing a foundation for statistical inference and hypothesis testing.
+
+### Q17: What is the difference between a confidence interval and a prediction interval, and how do you calculate them? ###
+
+Answer:
+
+A confidence interval is a range of values that is likely to contain the true value of a population parameter with a certain level of confidence. It is used to estimate the precision or accuracy of a sample statistic, such as a mean or a proportion, based on a sample from a larger population.
+
+For example, if we want to estimate the average height of all adults in a certain region, we can take a random sample of individuals from that region and calculate the sample mean height. Then we can construct a confidence interval for the true population mean height, based on the sample mean and the sample size, with a certain level of confidence, such as 95%. This means that if we repeat the sampling process many times, 95% of the resulting intervals will contain the true population mean height.
+
+The formula for a confidence interval is:
+confidence interval = sample statistic +/- margin of error
+
+The margin of error depends on the sample size, the standard deviation of the population (or the sample, if the population standard deviation is unknown), and the desired level of confidence. For example, if the sample size is larger or the standard deviation is smaller, the margin of error will be smaller, resulting in a narrower confidence interval.
+
+A prediction interval is a range of values that is likely to contain a future observation or outcome with a certain level of confidence. It is used to estimate the uncertainty or variability of a future value based on a statistical model and the observed data.
+
+For example, if we have a regression model that predicts the sales of a product based on its price and advertising budget, we can use a prediction interval to estimate the range of possible sales for a new product with a certain price and advertising budget, with a certain level of confidence, such as 95%. This means that if we repeat the prediction process many times, 95% of the resulting intervals will contain the true sales value.
+
+The formula for a prediction interval is:
+prediction interval = point estimate +/- margin of error
+
+The point estimate is the predicted value of the outcome variable based on the model and the input variables. The margin of error depends on the residual standard deviation of the model, which measures the variability of the observed data around the predicted values, and the desired level of confidence. For example, if the residual standard deviation is larger or the level of confidence is higher, the margin of error will be larger, resulting in a wider prediction interval.
+![4](https://user-images.githubusercontent.com/72076328/227254955-b57bd42a-b51b-4b4a-abab-1adb059eca98.png)
+
 

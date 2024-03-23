@@ -16,6 +16,8 @@
 * [Q13: According to hospital records, 75% of patients suffering from a disease die from that disease. Find out the probability that 4 out of the 6 randomly selected patients survive.](https://github.com/youssefHosni/Data-Science-Interview-Questions-Answers/blob/main/Probability%20Interview%20Questions%20%26%20Answers%20for%20Data%20Scientists.md#q13-according-to-hospital-records-75-of-patients-suffering-from-a-disease-die-from-that-disease-find-out-the-probability-that-4-out-of-the-6-randomly-selected-patients-survive)
 * [Q14: Discuss some methods you will use to estimate the Parameters of a Probability Distribution](https://github.com/youssefHosni/Data-Science-Interview-Questions-Answers/blob/main/Probability%20Interview%20Questions%20%26%20Answers%20for%20Data%20Scientists.md#q14-discuss-some-methods-you-will-use-to-estimate-the-parameters-of-a-probability-distribution)
 * [Q15: You have 40 cards in four colors, 10 reds, 10 greens, 10 blues, and ten yellows. Each color has a number from 1 to 10. When you pick two cards without replacement, what is the probability that the two cards are not in the same color and not in the same number?](https://github.com/youssefHosni/Data-Science-Interview-Questions-Answers/blob/main/Probability%20Interview%20Questions%20%26%20Answers%20for%20Data%20Scientists.md#q15-you-have-40-cards-in-four-colors-10-reds-10-greens-10-blues-and-ten-yellows-each-color-has-a-number-from-1-to-10-when-you-pick-two-cards-without-replacement-what-is-the-probability-that-the-two-cards-are-not-in-the-same-color-and-not-in-the-same-number)
+* [Q16: Can you explain the difference between frequentist and Bayesian probability approaches?](https://github.com/youssefHosni/Data-Science-Interview-Questions-Answers/blob/main/Probability%20Interview%20Questions%20&%20Answers%20for%20Data%20Scientists.md#:~:text=39%20%3D%209/13-,Q16%3A%20Can%20you%20explain%20the%20difference%20between%20frequentist%20and%20Bayesian%20probability%20approaches%3F,-Answer%3A)
+* [Q17: Explain the Difference Between Probability and Likelihood](https://github.com/youssefHosni/Data-Science-Interview-Questions-Answers/blob/main/Probability%20Interview%20Questions%20&%20Answers%20for%20Data%20Scientists.md#:~:text=with%20new%20data.-,Q17%3A%20Explain%20the%20Difference%20Between%20Probability%20and%20Likelihood,Give%20feedback,-Footer)
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## Questions & Answers ##
 
@@ -223,3 +225,24 @@ So, the number of favorable choices for the 2nd card is (39-12)/39 = 27/39 = 9/1
 
 ![1668961881451](https://user-images.githubusercontent.com/72076328/202913961-f94f17b1-dc41-45b2-ba51-389583431d7b.jpg)
 
+
+### Q16: Can you explain the difference between frequentist and Bayesian probability approaches? ###
+
+Answer:
+
+The frequentist approach to probability defines probability as the long-run relative frequency of an event in an infinite number of trials. It views probabilities as fixed and objective, determined by the data at hand. In this approach, the parameters of a model are treated as fixed and unknown and estimated using methods like maximum likelihood estimation.
+
+
+
+On the other hand, Bayesian probability defines probability as a degree of belief, or the degree of confidence, in an event. It views probabilities as subjective and personal, representing an individual's beliefs. In this approach, the parameters of a model are treated as random variables with prior beliefs, which are updated as new data becomes available to form a posterior belief.
+
+
+
+In summary, the frequentist approach deals with fixed and objective probabilities and uses methods like estimation, while the Bayesian approach deals with subjective and personal probabilities and uses methods like updating prior beliefs with new data.
+
+### Q17: Explain the Difference Between Probability and Likelihood ###
+Probability and likelihood are two concepts that are often used in statistics and data analysis, but they have different meanings and uses.
+
+Probability is the measure of the likelihood of an event occurring. It is a number between 0 and 1, with 0 indicating an impossible event and 1 indicating a certain event. For example, the probability of flipping a coin and getting heads is 0.5.
+
+The likelihood, on the other hand, is the measure of how well a statistical model or hypothesis fits a set of observed data. It is not a probability, but rather a measure of how plausible the data is given the model or hypothesis. For example, if we have a hypothesis that the average height of people in a certain population is 6 feet, the likelihood of observing a random sample of people with an average height of 5 feet would be low.
